@@ -1,6 +1,6 @@
-#On Learning Python Spider -spider pics 爬虫学习之爬取图片
+# On Learning Python Spider -spider pics 爬虫学习之爬取图片
 
-##0X00 Introduction
+## 0X00 Introduction
 
 This tutorial is for Mac users learning python spider.
 
@@ -63,7 +63,7 @@ Beautiful Soup支持Python标准库中的HTML解析器,还支持一些第三方�
 
 
 
-##0X01 目的以及思路
+## 0X01 目的以及思路
 爬取某网站当前页中所涉及的图片，并下载到本地计算机上。 
    
    **实现的思路：**
@@ -156,7 +156,7 @@ soup=BeautifulSoup(r.text,"lxml")
 
 
 
-###<a>3.重点来了，如何过滤将网页中的标签呢？</a>：  
+### <a>3.重点来了，如何过滤将网页中的标签呢？</a>：  
 
 
 ***
@@ -230,7 +230,7 @@ request.urlretrieve(img_src, pic_name)
 
 
 
-##0X03完整代码
+## 0X03完整代码
  Here is the code:
 
 ```
@@ -267,13 +267,13 @@ for myimg in soup.find_all('div', class_='image'):
 
 print("@@@@@@@@@@@@@@")
 ```
-##0X04NEXT
+## 0X04NEXT
 * 之后可继续深入的地方：
 * 对全站进行图片爬取
 * 对动态页面进行爬取
 * etc.
 
-##0X05Reference
+## 0X05Reference
 
 1. Beautiful Soup 4.4.0 文档 http://beautifulsoup.readthedocs.io/zh_CN/latest/
 2. 《Python 编程：从入门到实践》
