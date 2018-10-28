@@ -7,8 +7,8 @@ from bs4 import BeautifulSoup
 import requests
 import os
 
-cookie = {"Cookie": "_T_WM=a3ef1ebdcdb0e7ec8f54fb68433d2691; ALF=1541504414; SCF=AjnvWSGISRfOZ63hRC7_61r2mnfMS4BMETDnZugtX_z7I35Mll8HBteNas1hQj7iTu1KRc9hjNxWqtHGpN1CvBk; SUB=_2A252xcWtDeRhGeRP41QQ9izOzDuIHXVSSevlrDV6PUJbktBeLVXDkW1NUBfxUZ65SIXAMnYpQkrmmZmTwZN6jHP9; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WFXVolPZv9lvQpj3dI1kHd05JpX5K-hUgL.Fozp1hqpSozES0M2dJLoIEpsKfi8H.HCPEH8SbHFebHWeCH8SCHFxb-ReEH8SbHFebHWeCH81F-RebHFBBtt; SUHB=0tKrB5JtFo1o68; M_WEIBOCN_PARAMS=fluicode%3D10000011%26lfid%3D1005052186162277%252Fhome%26uicode%3D20000174%26fid%3D102803"}
-url = 'https://weibo.cn/2186162277/profile?filter=1&page=1'
+cookie = {"Cookie": "_T_WM=xxxx; ALF=xxxxxx; SCF=xxxx; SUB=xxx; SUBP=x; SUHB=x; M_WEIBOCN_PARAMS=xx"}
+url = 'https://weibo.cn/xxxxxxxxxx/profile?filter=1&page=1'
 r = requests.get(url,cookies = cookie)
 print(r.url)
 
@@ -165,7 +165,7 @@ print("-------The end----------")
 
 # fo1 = open("weibo_XXX_Fullcontent.text","w")
 # for page in range(1,10):
-#  	url1='https://weibo.cn/2387522157/profile?filter=1&page=%d'%(page)
+#  	url1='https://weibo.cn/xxx/profile?filter=1&page=%d'%(page)
 #  	r1 = requests.get(url1,cookies = cookie)
 #  	soup=BeautifulSoup(r1.text,"lxml")
 #  	print("This is the user:XX`s weibo full content(display only 10 pages)")
